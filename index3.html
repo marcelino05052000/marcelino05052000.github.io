@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Lista de Tarefas</title>
+        <script>
+            function listar() {
+                // armazena o valor
+                var dado    = document.getElementById('campoTexto').value
+                // cria uma tarefa a partir do input
+                var tarefa    = document.createTextNode(dado)
+                // cria a tag li
+                var novaTarefa = document.createElement('li')
+                // adiciona os dados do input na tag li
+                novaTarefa.appendChild(tarefa)
+                // liga o li com a tag lista
+                document.getElementById('lista').appendChild(novaTarefa)
+                document.getElementById('campoTexto').value = ""
+            }
+        </script>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"><button>Homepage</button></a>
+            <a href="index2.html"><button>Calculadora</button></a>
+            <a href="index5.html"><button>Formulário</button></a>
+        </div>
+        <h1>Lista de tarefas</h1>
+        <form>
+            <input type="text" id="campoTexto">
+            <button type="button" onclick="listar()">Adicionar</button>
+        </form>
+    
+        <ul id="lista"></ul>
+    </body>
+</html>
