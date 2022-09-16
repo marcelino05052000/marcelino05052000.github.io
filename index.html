@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelino's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelino's Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Dev Icon Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <!-- CSS do Projeto -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Marcelino Barros Costa</h1>
+  <main id="container">
+    <aside id="bio-container">
+      <h2>Marcelino Barros Costa</h2>
+      <img id="bio-image" src="img/profile.png" alt="Matheus Battisti">
+      <p>Hi, I'm Marcelino and I'm a <span class="highlight">Computer Science</span> student at <span class="highlight">Universidade Federal do Agreste de Pernambuco</span>.</p>
+      <p id="welcome-text">Welcome!</p>
+      <ul id="social-container">
+        <li><a href="https://www.linkedin.com/in/marcelino-barros-2a753a248/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/marcelinobarroscosta" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://twitter.com/marcelinobcosta" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.youtube.com/marcelinobarros" ><ion-icon name="logo-youtube"></ion-icon></a></li>
+      </ul>
+      <div id="email-container">
+        <ion-icon name="mail-outline"></ion-icon><a href="mailto:marcelino05052000@gmail.com">marcelino05052000@gmail.com</a>
+      </div>
+    </aside>
+    <section id="about-container">
+      <h1 id="name">Marcelino Barros Costa</h1>
+      <p id="title"><span class="highlight">Computer Science student</span></p>
+      <p class="description" align="justify">I like coding, whether it's <span class="highlight">front-end</span> or <span class="highlight">back-end</span> (when I'm developing a web app) or when I'm doing my university works.</p>
+      <p class="description" align="justify">Since I'm still graduating, I'm learning more and more as time goes by. I really like to code and I'm eager to see what's going to happen in my future as a <span class="highlight">Software Engineer</span>.</p>
+      <p class="description" align="justify">In the future, I plan to get experience in <span class="highlight">Information Security</span>(InfoSec) because I really enjoy this topic and, since it's an important area, I plan to follow this path.</p>
+      <a href="https://github.com/marcelino05052000/" id="btn-projects" target="_blank"><ion-icon name="share-social-outline"></ion-icon> <span>My projects</span></a>
+      <h2 id="skills-section-title">My Skills</h2>
+      <p class="description">Technologies I have experienced until now:</p>
+      <div id="skills-container">
+        <div class="skills-box">
+          <p class="skills-title">Front-end</p>
+          <i class="devicon-html5-plain colored"></i>
+          <i class="devicon-css3-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Back-end</p>
+          <i class="devicon-ruby-plain-wordmark colored"></i>
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-typescript-plain colored"></i>
+        </div>
+        <div class="skills-box">
+            <p class="skills-title">Frameworks</p>
+            <i class="devicon-laravel-plain colored"></i>
+            <i class="devicon-rails-plain-wordmark colored"></i>
+            <i class="devicon-angularjs-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">General use</p>
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-java-plain-wordmark colored"></i>
+          <i class="devicon-c-plain colored"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Ion Icons -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
