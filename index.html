@@ -18,44 +18,50 @@
   <header class="nav">
     <a href="#top" class="nav-logo">MBC<span class="dot">.</span></a>
     <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="Marcelino_Barros_Costa_Resume.pdf" target="_blank" rel="noopener">
-      <ion-icon name="download-outline"></ion-icon>
-      <span>Resume</span>
-    </a>
+    <div class="nav-actions">
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <a class="nav-cta" href="Marcelino_Barros_Costa_Resume.pdf" target="_blank" rel="noopener">
+        <ion-icon name="download-outline"></ion-icon>
+        <span data-i18n="nav.resume">Resume</span>
+      </a>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow"><span class="status-dot"></span> Available for new opportunities</p>
-        <h1>
+        <p class="eyebrow"><span class="status-dot"></span> <span data-i18n="hero.eyebrow">Available for new opportunities</span></p>
+        <h1 data-i18n-html="hero.title">
           Hi, I'm <span class="gradient-text">Marcelino Barros Costa</span>.
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n-html="hero.subtitle">
           Full Stack Developer — <span class="accent">Frontend-focused</span>.
           Building reliable products with <span class="accent">React</span>, <span class="accent">React Native</span> &amp; <span class="accent">Node.js</span>.
         </p>
         <div class="hero-description">
-          <p>
+          <p data-i18n-html="hero.desc1">
             Currently at <span class="accent">Elife</span>, where I've grown over <span class="accent">3+ years</span> from Young Talents apprentice to Full Stack Developer — consistently shipping features and fixes that keep customer-facing platforms reliable for thousands of end users.
           </p>
-          <p>
+          <p data-i18n-html="hero.desc2">
             My day-to-day blends <span class="accent">React</span> &amp; <span class="accent">Vite</span> on the web, <span class="accent">React Native</span> on mobile, and <span class="accent">Node.js</span> services on the backend — backed by PostgreSQL, MongoDB and microservice patterns with Docker and RabbitMQ.
           </p>
-          <p>
+          <p data-i18n-html="hero.desc3">
             Bachelor in Computer Science from <span class="accent">UFAPE</span>, based in Garanhuns — PE, Brazil. I care about clean API contracts, production stability, and owning features end-to-end.
           </p>
         </div>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">
             <ion-icon name="mail-outline"></ion-icon>
-            <span>Get in touch</span>
+            <span data-i18n="hero.btnContact">Get in touch</span>
           </a>
           <a href="https://github.com/marcelino05052000/" target="_blank" rel="noopener" class="btn btn-ghost">
             <ion-icon name="logo-github"></ion-icon>
@@ -63,13 +69,13 @@
           </a>
           <a href="Marcelino_Barros_Costa_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
             <ion-icon name="document-text-outline"></ion-icon>
-            <span>Download CV</span>
+            <span data-i18n="hero.btnCV">Download CV</span>
           </a>
         </div>
         <ul class="hero-meta">
-          <li><ion-icon name="location-outline"></ion-icon> Garanhuns, PE — Brazil</li>
-          <li><ion-icon name="briefcase-outline"></ion-icon> Elife</li>
-          <li><ion-icon name="language-outline"></ion-icon> PT (Native) · EN (Professional)</li>
+          <li><ion-icon name="location-outline"></ion-icon> <span data-i18n="hero.metaLocation">Garanhuns, PE — Brazil</span></li>
+          <li><ion-icon name="briefcase-outline"></ion-icon> <span>Elife</span></li>
+          <li><ion-icon name="language-outline"></ion-icon> <span data-i18n="hero.metaLanguages">PT (Native) · EN (Professional)</span></li>
         </ul>
       </div>
       <aside class="hero-card">
@@ -77,7 +83,7 @@
           <img src="img/profile.png" alt="Photo of Marcelino Barros Costa" class="avatar">
         </div>
         <h3>Marcelino Barros Costa</h3>
-        <p class="hero-card-role">Full Stack Developer @ Elife</p>
+        <p class="hero-card-role" data-i18n="hero.cardRole">Full Stack Developer @ Elife</p>
         <ul class="hero-card-stack">
           <li title="React"><i class="devicon-react-original colored"></i></li>
           <li title="React Native"><i class="devicon-react-original colored"></i></li>
@@ -98,28 +104,28 @@
 
     <section id="about" class="section">
       <header class="section-header">
-        <span class="section-kicker">01 — About</span>
-        <h2>About me</h2>
+        <span class="section-kicker" data-i18n="about.kicker">01 — About</span>
+        <h2 data-i18n="about.title">About me</h2>
       </header>
       <div class="about-grid">
-        <p>
+        <p data-i18n-html="about.p1">
           I'm a Full Stack Developer who is <span class="accent">most effective on the frontend</span>, with React and modern JS/TS tooling at the core. I've spent the last 3+ years at Elife building and maintaining customer-facing platforms, contributing to Node.js services on the backend and helping bootstrap the company's React Native mobile app.
         </p>
-        <p>
+        <p data-i18n-html="about.p2">
           My background in Computer Science (UFAPE) gave me a solid foundation in software engineering, relational and NoSQL databases, and microservice architectures. I care about <span class="accent">production stability</span>, clean API contracts, and shipping features end-to-end — from requirements to deployment.
         </p>
         <div class="about-stats">
           <div class="stat">
             <span class="stat-num">3+</span>
-            <span class="stat-label">Years of professional experience</span>
+            <span class="stat-label" data-i18n="about.stat1">Years of professional experience</span>
           </div>
           <div class="stat">
             <span class="stat-num">4</span>
-            <span class="stat-label">Promotions at Elife</span>
+            <span class="stat-label" data-i18n="about.stat2">Promotions at Elife</span>
           </div>
           <div class="stat">
-            <span class="stat-num">B.Sc.</span>
-            <span class="stat-label">Computer Science — UFAPE</span>
+            <span class="stat-num" data-i18n="about.stat3Num">B.Sc.</span>
+            <span class="stat-label" data-i18n="about.stat3">Computer Science — UFAPE</span>
           </div>
         </div>
       </div>
@@ -127,14 +133,14 @@
 
     <section id="skills" class="section">
       <header class="section-header">
-        <span class="section-kicker">02 — Skills</span>
-        <h2>Technical stack</h2>
+        <span class="section-kicker" data-i18n="skills.kicker">02 — Skills</span>
+        <h2 data-i18n="skills.title">Technical stack</h2>
       </header>
       <div class="skills-grid">
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="color-palette-outline"></ion-icon>
-            <h3>Frontend</h3>
+            <h3 data-i18n="skills.frontend">Frontend</h3>
           </header>
           <p class="skill-card-tags">React · Vite · React Native · Angular · TypeScript · JavaScript (ES6+) · HTML5 · CSS3</p>
           <ul class="skill-icons">
@@ -150,7 +156,7 @@
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="server-outline"></ion-icon>
-            <h3>Backend</h3>
+            <h3 data-i18n="skills.backend">Backend</h3>
           </header>
           <p class="skill-card-tags">Node.js · Express · RESTful APIs · Ruby on Rails · Laravel (PHP)</p>
           <ul class="skill-icons">
@@ -165,9 +171,9 @@
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="cube-outline"></ion-icon>
-            <h3>Databases</h3>
+            <h3 data-i18n="skills.databases">Databases</h3>
           </header>
-          <p class="skill-card-tags">PostgreSQL · MongoDB · SQL &amp; NoSQL modeling</p>
+          <p class="skill-card-tags" data-i18n-html="skills.databasesTags">PostgreSQL · MongoDB · SQL &amp; NoSQL modeling</p>
           <ul class="skill-icons">
             <li><i class="devicon-postgresql-plain colored" title="PostgreSQL"></i></li>
             <li><i class="devicon-mongodb-plain colored" title="MongoDB"></i></li>
@@ -177,9 +183,9 @@
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="construct-outline"></ion-icon>
-            <h3>DevOps &amp; Tools</h3>
+            <h3 data-i18n-html="skills.devops">DevOps &amp; Tools</h3>
           </header>
-          <p class="skill-card-tags">Docker · RabbitMQ · Git · GitHub · GitHub Pages · CI/CD basics</p>
+          <p class="skill-card-tags" data-i18n="skills.devopsTags">Docker · RabbitMQ · Git · GitHub · GitHub Pages · CI/CD basics</p>
           <ul class="skill-icons">
             <li><i class="devicon-docker-plain colored" title="Docker"></i></li>
             <li><i class="devicon-git-plain colored" title="Git"></i></li>
@@ -190,9 +196,9 @@
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="code-slash-outline"></ion-icon>
-            <h3>Languages</h3>
+            <h3 data-i18n="skills.languages">Languages</h3>
           </header>
-          <p class="skill-card-tags">Java · C · Python (data analysis) · Kotlin (mobile)</p>
+          <p class="skill-card-tags" data-i18n="skills.languagesTags">Java · C · Python (data analysis) · Kotlin (mobile)</p>
           <ul class="skill-icons">
             <li><i class="devicon-java-plain-wordmark colored" title="Java"></i></li>
             <li><i class="devicon-c-plain colored" title="C"></i></li>
@@ -204,9 +210,9 @@
         <article class="skill-card">
           <header class="skill-card-header">
             <ion-icon name="git-network-outline"></ion-icon>
-            <h3>Practices</h3>
+            <h3 data-i18n="skills.practices">Practices</h3>
           </header>
-          <p class="skill-card-tags">Microservices communication · Agile workflows · Code review · Debugging in production</p>
+          <p class="skill-card-tags" data-i18n="skills.practicesTags">Microservices communication · Agile workflows · Code review · Debugging in production</p>
           <ul class="skill-icons">
             <li><span class="badge">Agile</span></li>
             <li><span class="badge">Microservices</span></li>
@@ -218,23 +224,23 @@
 
     <section id="experience" class="section">
       <header class="section-header">
-        <span class="section-kicker">03 — Experience</span>
-        <h2>Professional experience</h2>
+        <span class="section-kicker" data-i18n="exp.kicker">03 — Experience</span>
+        <h2 data-i18n="exp.title">Professional experience</h2>
       </header>
       <ol class="timeline">
         <li class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Jun 2025 — Present</span>
-              <span class="timeline-tag">Current</span>
+              <span class="timeline-date" data-i18n="exp.fs.date">Jun 2025 — Present</span>
+              <span class="timeline-tag" data-i18n="exp.current">Current</span>
             </div>
-            <h3>Full Stack Developer</h3>
-            <p class="timeline-company">Elife · Garanhuns, PE — Brazil</p>
+            <h3 data-i18n="exp.fs.title">Full Stack Developer</h3>
+            <p class="timeline-company" data-i18n="exp.company">Elife · Garanhuns, PE — Brazil</p>
             <ul class="timeline-bullets">
-              <li>Expanded responsibilities across the full stack, contributing to the customer-facing platform with <strong>React/Vite</strong> on the frontend and <strong>Node.js</strong> services on the backend.</li>
-              <li>Started building the company's <strong>React Native</strong> mobile application, translating existing web features into a performant cross-platform experience.</li>
-              <li>Deliver bug fixes and new features end-to-end — from requirements clarification through deployment — while keeping production stability for end customers.</li>
+              <li data-i18n-html="exp.fs.b1">Expanded responsibilities across the full stack, contributing to the customer-facing platform with <strong>React/Vite</strong> on the frontend and <strong>Node.js</strong> services on the backend.</li>
+              <li data-i18n-html="exp.fs.b2">Started building the company's <strong>React Native</strong> mobile application, translating existing web features into a performant cross-platform experience.</li>
+              <li data-i18n-html="exp.fs.b3">Deliver bug fixes and new features end-to-end — from requirements clarification through deployment — while keeping production stability for end customers.</li>
             </ul>
           </div>
         </li>
@@ -243,14 +249,14 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Mar 2024 — Jun 2025</span>
+              <span class="timeline-date" data-i18n="exp.fe.date">Mar 2024 — Jun 2025</span>
             </div>
-            <h3>Frontend Developer</h3>
-            <p class="timeline-company">Elife · Garanhuns, PE — Brazil</p>
+            <h3 data-i18n="exp.fe.title">Frontend Developer</h3>
+            <p class="timeline-company" data-i18n="exp.company">Elife · Garanhuns, PE — Brazil</p>
             <ul class="timeline-bullets">
-              <li>Owned frontend development of platform features using <strong>React</strong>, improving UI consistency and reducing recurring customer-reported issues.</li>
-              <li>Collaborated with backend engineers to refine REST API contracts, accelerating delivery of new screens and workflows.</li>
-              <li>Promoted from Trainee after consistently shipping production-ready code and demonstrating ownership of frontend tasks.</li>
+              <li data-i18n-html="exp.fe.b1">Owned frontend development of platform features using <strong>React</strong>, improving UI consistency and reducing recurring customer-reported issues.</li>
+              <li data-i18n-html="exp.fe.b2">Collaborated with backend engineers to refine REST API contracts, accelerating delivery of new screens and workflows.</li>
+              <li data-i18n-html="exp.fe.b3">Promoted from Trainee after consistently shipping production-ready code and demonstrating ownership of frontend tasks.</li>
             </ul>
           </div>
         </li>
@@ -259,14 +265,14 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Mar 2023 — Feb 2024</span>
+              <span class="timeline-date" data-i18n="exp.tr.date">Mar 2023 — Feb 2024</span>
             </div>
-            <h3>Full Stack Trainee Developer</h3>
-            <p class="timeline-company">Elife (CXPRESS product) · Garanhuns, PE — Brazil</p>
+            <h3 data-i18n="exp.tr.title">Full Stack Trainee Developer</h3>
+            <p class="timeline-company" data-i18n="exp.tr.company">Elife (CXPRESS product) · Garanhuns, PE — Brazil</p>
             <ul class="timeline-bullets">
-              <li>Worked across the stack on the <strong>CXPRESS</strong> platform using React (frontend), Node.js (backend), PostgreSQL and MongoDB (databases).</li>
-              <li>Operated within a containerized environment with <strong>Docker</strong> and asynchronous communication via <strong>RabbitMQ</strong>, gaining hands-on experience with microservice patterns.</li>
-              <li>Took on increasing responsibility in feature delivery and bug-fixing cycles, leading to promotion to Frontend Developer.</li>
+              <li data-i18n-html="exp.tr.b1">Worked across the stack on the <strong>CXPRESS</strong> platform using React (frontend), Node.js (backend), PostgreSQL and MongoDB (databases).</li>
+              <li data-i18n-html="exp.tr.b2">Operated within a containerized environment with <strong>Docker</strong> and asynchronous communication via <strong>RabbitMQ</strong>, gaining hands-on experience with microservice patterns.</li>
+              <li data-i18n-html="exp.tr.b3">Took on increasing responsibility in feature delivery and bug-fixing cycles, leading to promotion to Frontend Developer.</li>
             </ul>
           </div>
         </li>
@@ -275,13 +281,13 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Sep 2022 — Feb 2023</span>
+              <span class="timeline-date" data-i18n="exp.ap.date">Sep 2022 — Feb 2023</span>
             </div>
-            <h3>Apprentice Developer · Young Talents Program</h3>
-            <p class="timeline-company">Elife · Garanhuns, PE — Brazil</p>
+            <h3 data-i18n="exp.ap.title">Apprentice Developer · Young Talents Program</h3>
+            <p class="timeline-company" data-i18n="exp.company">Elife · Garanhuns, PE — Brazil</p>
             <ul class="timeline-bullets">
-              <li>Selected for Elife's <strong>Young Talents</strong> program; trained intensively on modern web development tooling and team collaboration practices.</li>
-              <li>Built foundational skills across frontend and backend technologies that led to a full-time Trainee offer at the end of the program.</li>
+              <li data-i18n-html="exp.ap.b1">Selected for Elife's <strong>Young Talents</strong> program; trained intensively on modern web development tooling and team collaboration practices.</li>
+              <li data-i18n-html="exp.ap.b2">Built foundational skills across frontend and backend technologies that led to a full-time Trainee offer at the end of the program.</li>
             </ul>
           </div>
         </li>
@@ -290,30 +296,30 @@
 
     <section id="education" class="section">
       <header class="section-header">
-        <span class="section-kicker">04 — Education</span>
-        <h2>Education &amp; certifications</h2>
+        <span class="section-kicker" data-i18n="edu.kicker">04 — Education</span>
+        <h2 data-i18n-html="edu.title">Education &amp; certifications</h2>
       </header>
       <div class="edu-grid">
         <article class="edu-card">
           <ion-icon name="school-outline" class="edu-icon"></ion-icon>
-          <p class="edu-date">Aug 2019 — Mar 2024</p>
-          <h3>Bachelor's Degree in Computer Science</h3>
-          <p class="edu-school">Federal University of Agreste of Pernambuco (UFAPE) — Garanhuns Campus</p>
+          <p class="edu-date" data-i18n="edu.bachelor.date">Aug 2019 — Mar 2024</p>
+          <h3 data-i18n="edu.bachelor.title">Bachelor's Degree in Computer Science</h3>
+          <p class="edu-school" data-i18n="edu.bachelor.school">Federal University of Agreste of Pernambuco (UFAPE) — Garanhuns Campus</p>
         </article>
         <article class="edu-card">
           <ion-icon name="library-outline" class="edu-icon"></ion-icon>
-          <p class="edu-date">Feb 2014 — Dec 2018</p>
-          <h3>Technical Degree in Information Technology</h3>
-          <p class="edu-school">Federal Institute of Pernambuco (IFPE) — Garanhuns Campus</p>
+          <p class="edu-date" data-i18n="edu.tech.date">Feb 2014 — Dec 2018</p>
+          <h3 data-i18n="edu.tech.title">Technical Degree in Information Technology</h3>
+          <p class="edu-school" data-i18n="edu.tech.school">Federal Institute of Pernambuco (IFPE) — Garanhuns Campus</p>
         </article>
         <article class="edu-card edu-card-wide">
           <ion-icon name="ribbon-outline" class="edu-icon"></ion-icon>
-          <h3>Certifications &amp; continuous learning</h3>
+          <h3 data-i18n-html="edu.cert.title">Certifications &amp; continuous learning</h3>
           <ul class="cert-list">
-            <li>Full Stack Course: MongoDB, Node.js &amp; React Native</li>
-            <li>SQL &amp; NoSQL Databases — Basic to Advanced</li>
-            <li>Microservices Communication</li>
-            <li>Git &amp; GitHub — Basic to Advanced (incl. Gist &amp; GitHub Pages)</li>
+            <li data-i18n-html="edu.cert.1">Full Stack Course: MongoDB, Node.js &amp; React Native</li>
+            <li data-i18n-html="edu.cert.2">SQL &amp; NoSQL Databases — Basic to Advanced</li>
+            <li data-i18n="edu.cert.3">Microservices Communication</li>
+            <li data-i18n-html="edu.cert.4">Git &amp; GitHub — Basic to Advanced (incl. Gist &amp; GitHub Pages)</li>
           </ul>
         </article>
       </div>
@@ -321,10 +327,10 @@
 
     <section id="contact" class="section section-contact">
       <header class="section-header">
-        <span class="section-kicker">05 — Contact</span>
-        <h2>Let's work together</h2>
+        <span class="section-kicker" data-i18n="contact.kicker">05 — Contact</span>
+        <h2 data-i18n="contact.title">Let's work together</h2>
       </header>
-      <p class="contact-lead">
+      <p class="contact-lead" data-i18n="contact.lead">
         Open to frontend, full stack, and React Native opportunities. The fastest way to reach me is email or LinkedIn.
       </p>
       <div class="contact-actions">
@@ -345,10 +351,11 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Marcelino Barros Costa · Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
+    <p data-i18n-template="footer.text">© <span id="year"></span> Marcelino Barros Costa · Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/i18n.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
